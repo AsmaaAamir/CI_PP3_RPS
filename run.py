@@ -72,11 +72,67 @@ def game():
     """
     Code for the game to play against the computer.
     """
-    choices = ["Rock", "Paper", "Sissors"]
+    while True:
 
-    computer = random.choice(choices)
-    player = none 
+        choices = ["Rock", "Paper", "Sissors"]
 
+        computer = random.choice(choices)
+        player = None
+
+    while player not in choices:
+        player = input("Rock, Paper, or Sissors? \t").lower()
+
+        if player == computer:
+            print("Computer: ", computer)
+            print("Player: ", player)
+            print("! Tie !")
+
+        elif player == "Rock":
+            if computer == "Sissors":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("** You Win **")
+            if computer == "Paper":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print(":( You Lose ):")
+            
+        elif player == "Paper":
+            if computer == "Rock":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("** You Win **")
+            if computer == "Sissors":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print(":( You Lose ):")
+        
+        elif player == "Sissors":
+            if computer == "Paper":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print("** You Win **")
+            if computer == "Rock":
+                print("Computer: ", computer)
+                print("Player: ", player)
+                print(":( You Lose ):")
+
+    play_again = input("Play again? (Yes / No : "). lower()
+    
+    if play_again != "yes":
+        g_choice = input("""
+                    1. Play again
+                    2. Back to home page\n
+            Please enter your choice:\t """)
+
+        if g_choice == "1":
+            game()
+        elif g_choice == "2":
+            home_screen()
+        else:
+            print("You can only select either 1 or 2")
+            print("Please enter your choice: \t")
+            game_rules()
 
 
 home_screen()
