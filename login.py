@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from run import home_screen, game_rules, game
 
 # scope and the constant vars are from love_sandwiches walkt-through project
 # by code institute
@@ -57,13 +58,10 @@ def register():
     email = input("Enter your email address: \t")
 
     user_details = [username, password, email]
-    
-    # Now append this to the worksheet as a row
-
     login.append_row(user_details)
     
 
-def update_login_worksheet(register):
+def update_login_worksheet():
     """
     Update the login sheet with new players details, their username, password
     and email addess.
@@ -72,10 +70,19 @@ def update_login_worksheet(register):
     print("--------------- Saving your details -----------------------")
     print(" ")
     print("------------------ Your registered ------------------------")
-    
-
-    
-
+    while True:
+        update_choice = input("""
+            1. Play the Game
+            2. Back to home page\n
+            Please enter your choice:\t """)
+        if update_choice == "1":
+            game()
+        elif update_choice == "2":
+            home_screen()
+        else:
+            print("You can only select either 1 or 2")
+            print("Please enter your choice: \t")
+            game_rules()
 
 
 def validate_register():
@@ -84,6 +91,8 @@ def validate_register():
     stated in the register varibale.
     """
     pass
+
+
 def existing_players():
     """
     Allowing returing player to login to play the game.
@@ -97,5 +106,5 @@ def existing_players():
 login_menu()
 register()
 validate_register()
-update_login_worksheet(register)
+update_login_worksheet()
 existing_players()

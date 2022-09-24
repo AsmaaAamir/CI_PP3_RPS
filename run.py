@@ -1,4 +1,5 @@
 import random
+from login.py import login_menu, register
 
 
 def home_screen():
