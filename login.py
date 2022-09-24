@@ -17,7 +17,7 @@ SHEET = GSPREAD_CLIENT.open('login_details')
 WORKSHEET = SHEET.worksheet("login")
 
 # to access the usrname from sheet
-# user = SHEET.col_values(1)
+
 
 
 def login_menu():
@@ -51,9 +51,21 @@ def register():
     print("           Rules for registration ")
     print(" ")
     print(" + Username - Maximum of 10 characters.")
-    print(" + Password - Between 6 - 10 characters, it can have \n   number and sysmbols.")
+    print(" + Password - Between 6 - 10 characters, it can have \n  number and sysmbols.")
     print(" ")
     print("------------------------------------------------------")
+    print(" ")
+    print("------------------- Your Details ----------------------")
+    print(" ")
+
+    user = WORKSHEET.col_values(1)
+    pword = WORKSHEET.col_values(2)
+    eaddress = WORKSHEET.col_values(3)
+
+    username = user.append_input("Create a username: \t")
+    password = pword.append_input("Enter your password: \t")
+    password1 = input("Confirm the password: \t")
+    email = eaddress.append_input("Enter your email address: \t")
 
 
 def validate_register():
