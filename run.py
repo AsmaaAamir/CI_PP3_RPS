@@ -1,5 +1,6 @@
 import random
 
+
 def home_screen():
     """
     Welcome page with heading and main menu.
@@ -71,7 +72,12 @@ def game():
     """
     Code for the game to play against the computer.
     """
-    pass   
+    choices = ["Rock", "Paper", "Sissors"]
+
+    computer = random.choice(choices)
+    player = none 
+
+
 
 home_screen()
 game_rules()
