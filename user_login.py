@@ -26,7 +26,7 @@ def login_menu():
     print("Have you been here before?\n")
     login_choice = input("""
         1. Yes
-        2. No 
+        2. No
         3. Home Page\n
         Please enter your option: \t""")
     if login_choice == "1":
@@ -34,7 +34,7 @@ def login_menu():
     elif login_choice == "2":
         register()
     elif login_choice == "3":
-        home_screen() 
+        home_screen()
     else:
         print("Please select one of the above options: \t \n")
         return
@@ -85,7 +85,7 @@ def update_login_worksheet():
         else:
             print("You can only select either 1 or 2")
             print("Please enter your choice: \t")
-            game_rules()
+            login_menu()
 
 
 def validate_register():
@@ -110,13 +110,11 @@ def existing_players():
     print(" ")
     username = input("Create a username: \t")
     password = input("Enter your password: \t")
-    
-    users = username.get('values', [])
+    users = username.find('values')
+    word = password.find('value')
+
     if not users:
         print("Username not found, please try again.")
-        return
-
-    word = password.get('values', [])  
     if not word:
         print("Password is incorret, please try again.")
         return
