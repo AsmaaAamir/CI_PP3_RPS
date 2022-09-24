@@ -76,7 +76,9 @@ def game():
 
     computer = random.choice(choices)
     player = None
-
+    print(" ")
+    print("------------------ Lets Start ------------------------")
+    print(" ")
     while player not in choices:
         player = input("rock, paper, or sissors? \t").lower()
 
@@ -113,21 +115,15 @@ def game():
                 print("Player: ", player)
                 print(":( You Lose ):")
 
-    play_again = input("Play again? (Yes / No : "). lower()
-    if play_again != "yes":
-        g_choice = input("""
-                    1. Play again
-                    2. Back to home page\n
-            Please enter your choice:\t """)
+    print(" ")
+    print("------------------  Play Again  ----------------------")
 
-        if g_choice == "1":
-            game()
-        elif g_choice == "2":
-            home_screen()
-        else:
-            print("You can only select either 1 or 2")
-            print("Please enter your choice: \t")
-            game_rules()
+    play_again = input("(Yes / No): "). lower()
+    print(" ")
+    if play_again == "yes":
+        game()
+    elif play_again == "no":
+        home_screen()
 
 
 home_screen()
