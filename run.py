@@ -2,7 +2,15 @@ def home_screen():
     """
     Welcome page with heading and main menu.
     """
-    
+    print(" ")
+    print("   Welcome  to ")
+    print(" ")
+    print("           Rock\n ")
+    print("                Paper\n")
+    print("                     Sissors\n")
+    print(" ")
+    print("    (Aginst Computer)\n ")
+    print("--------------------------------------")
 
 
 def game_rules():
