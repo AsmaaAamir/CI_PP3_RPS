@@ -1,3 +1,5 @@
+import random
+
 def home_screen():
     """
     Welcome page with heading and main menu.
@@ -32,7 +34,7 @@ def home_screen():
 def game_rules():
     """
     Game rules - breifly explainging the user how to play the game.
-    how to win the game and how the user can lose the game. 
+    how to win the game and how the user can lose the game.
     I got the game rules from google.
     """
     print("------------------  Game Rules  -----------------------")
