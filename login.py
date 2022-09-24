@@ -1,14 +1,14 @@
 import gspread
 from google.oauth2.service_account import Credentials
 
-# Scope from Code Istituet Love Sandwiches walk-through project
+# scope and the constant vars are from love_sandwiches walkt-through project
+# by code institute
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
     ]
-
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
@@ -19,7 +19,19 @@ def login_menu():
     """
     Gives the user the option to login or register.
     """
-    pass
+    print(" ")
+    print("Have you been here before>\n")
+    login_choice = input(""""
+        1. Yes
+        2. No \n
+        Please enter your option: \t""")
+    if login_choice == "1":
+        existing_players()
+    elif login_choice == "2":
+        register()
+    else:
+        print("Please select one of the above options: \t \n")
+        return
 
 
 def register():
