@@ -32,16 +32,21 @@ def home_screen():
 def game_rules():
     """
     Game rules - breifly explainging the user how to play the game.
-    how to win the game and how the user can lose the game.
+    how to win the game and how the user can lose the game. 
+    I got the game rules from google.
     """
     print("------------------  Game Rules  -----------------------")
     print(" ")
     print("The rules are very simple:- ")
     print(" ")
-    print("1. Player would be playing againt the computer.")
+    print("1. You would be playing againt the computer.")
     print("2. You can choose between Rock, Paper and Siccsors.")
     print("3. You type in your choose then it the computer display it choice.\n")
-    print(" Ways your can *** WIN ***")
+    print("Ways your can  *** WIN *** ")
+    print(" ")
+    print("1. If you choose Rock, you will win against Scissors,\n   but lose against Paper.")
+    print("2. If you choose Paper, you will win against Rock,\n   but lose against Sissors.")
+    print("3. If you choose Sicssors, you will win against Paper,\n   but lose against Rock.")
 
 
 def game():
