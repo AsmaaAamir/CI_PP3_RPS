@@ -117,7 +117,7 @@ def game():
 
     print(" ")
     print("------------------  Play Again  ----------------------")
-
+    print(" ")
     play_again = input("(Yes / No): "). lower()
     print(" ")
     if play_again == "yes":
