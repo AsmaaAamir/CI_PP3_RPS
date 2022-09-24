@@ -47,6 +47,22 @@ def game_rules():
     print("1. If you choose Rock, you will win against Scissors,\n   but lose against Paper.")
     print("2. If you choose Paper, you will win against Rock,\n   but lose against Sissors.")
     print("3. If you choose Sicssors, you will win against Paper,\n   but lose against Rock.")
+    print(" ")
+    print("------------------------------------------------------")
+    while True:
+        gr_choice = input("""
+            1. Play the Game
+            2. Back to home page\n
+            Please enter your choice:\t """)
+
+        if gr_choice == "1":
+            game()
+        elif gr_choice == "2":
+            home_screen()
+        else:
+            print("You can only select either 1 or 2")
+            print("Please enter your choice: \t")
+            game_rules()
 
 
 def game():
