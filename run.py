@@ -7,11 +7,26 @@ def home_screen():
     print(" ")
     print("           Rock\n ")
     print("                Paper\n")
-    print("                     Sissors\n")
+    print("                       Sissors\n")
     print(" ")
-    print("    (Aginst Computer)\n ")
-    print("--------------------------------------")
+    print(" ")
 
+    print("------------------  Main Menu  ------------------------")
+
+    while True:
+        home_choice = input("""
+            1. Game Rules
+            2. Play the Game\n
+            Please enter your choice:\t """)
+
+        if home_choice == "1":
+            game_rules()
+        elif home_choice == "2":
+            game()
+        else:
+            print("You can only select either 1 or 2")
+            print("Please enter your choice: \t")
+            home_screen()
 
 def game_rules():
     """
