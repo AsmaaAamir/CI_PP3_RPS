@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from run import home_screen, game_rules, game
+
+# from run import home_screen, game
 
 # scope and the constant vars are from love_sandwiches walkt-through project
 # by code institute
@@ -59,9 +60,9 @@ def register():
     username = input("Create a username: \t")
     password = input("Enter your password: \t")
     email = input("Enter your email address: \t")
-
     user_details = [username, password, email]
     login.append_row(user_details)
+    update_login_worksheet()
 
 
 def update_login_worksheet():
@@ -117,7 +118,7 @@ def existing_players():
         print("Username not found, please try again.")
     if not word:
         print("Password is incorret, please try again.")
-        return
+        existing_players()
     else:
         print("Welcome back, Lets Play..")
         game()

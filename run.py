@@ -1,6 +1,6 @@
 import random
 
-from user_login import login_menu
+# from user_login import login_menu
 
 
 def home_screen():
