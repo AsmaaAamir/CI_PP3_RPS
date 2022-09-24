@@ -72,53 +72,48 @@ def game():
     """
     Code for the game to play against the computer.
     """
-    while True:
+    choices = ["rock", "paper", "sissors"]
 
-        choices = ["Rock", "Paper", "Sissors"]
-
-        computer = random.choice(choices)
-        player = None
+    computer = random.choice(choices)
+    player = None
 
     while player not in choices:
-        player = input("Rock, Paper, or Sissors? \t").lower()
+        player = input("rock, paper, or sissors? \t").lower()
 
         if player == computer:
             print("Computer: ", computer)
             print("Player: ", player)
             print("! Tie !")
 
-        elif player == "Rock":
-            if computer == "Sissors":
+        elif player == "rock":
+            if computer == "sissors":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print("** You Win **")
-            if computer == "Paper":
+            if computer == "paper":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print(":( You Lose ):")
-            
-        elif player == "Paper":
-            if computer == "Rock":
+        elif player == "paper":
+            if computer == "rock":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print("** You Win **")
-            if computer == "Sissors":
+            if computer == "sissors":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print(":( You Lose ):")
-        
-        elif player == "Sissors":
-            if computer == "Paper":
+        elif player == "sissors":
+            if computer == "paper":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print("** You Win **")
-            if computer == "Rock":
+            if computer == "rock":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print(":( You Lose ):")
 
     play_again = input("Play again? (Yes / No : "). lower()
-    
     if play_again != "yes":
         g_choice = input("""
                     1. Play again
