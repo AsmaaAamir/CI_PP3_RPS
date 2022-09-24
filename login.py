@@ -14,10 +14,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('login_details')
 
-WORKSHEET = SHEET.worksheet("login")
-
-# to access the usrname from sheet
-
+login = SHEET.worksheet("login")
 
 
 def login_menu():
@@ -53,19 +50,32 @@ def register():
     print(" + Username - Maximum of 10 characters.")
     print(" + Password - Between 6 - 10 characters, it can have \n  number and sysmbols.")
     print(" ")
-    print("------------------------------------------------------")
-    print(" ")
     print("------------------- Your Details ----------------------")
     print(" ")
+    username = input("Create a username: \t")
+    password = input("Enter your password: \t")
+    email = input("Enter your email address: \t")
 
-    user = WORKSHEET.col_values(1)
-    pword = WORKSHEET.col_values(2)
-    eaddress = WORKSHEET.col_values(3)
+    user_details = [username, password, email]
+    
+    # Now append this to the worksheet as a row
 
-    username = user.append_input("Create a username: \t")
-    password = pword.append_input("Enter your password: \t")
-    password1 = input("Confirm the password: \t")
-    email = eaddress.append_input("Enter your email address: \t")
+    login.append_row(user_details)
+    
+
+def update_login_worksheet(register):
+    """
+    Update the login sheet with new players details, their username, password
+    and email addess.
+    """
+    print(" ")
+    print("--------------- Saving your details -----------------------")
+    print(" ")
+    print("------------------ Your registered ------------------------")
+    
+
+    
+
 
 
 def validate_register():
@@ -74,16 +84,6 @@ def validate_register():
     stated in the register varibale.
     """
     pass
-
-
-def update_login_worksheet():
-    """
-    Update the login sheet with new players details, their username, password
-    and email addess.
-    """
-    pass
-
-
 def existing_players():
     """
     Allowing returing player to login to play the game.
@@ -97,5 +97,5 @@ def existing_players():
 login_menu()
 register()
 validate_register()
-update_login_worksheet()
+update_login_worksheet(register)
 existing_players()
