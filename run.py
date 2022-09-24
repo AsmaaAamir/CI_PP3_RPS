@@ -1,5 +1,6 @@
 import random
-from login.py import login_menu, register
+
+from user_login import login_menu, register
 
 
 def home_screen():
@@ -20,15 +21,18 @@ def home_screen():
     while True:
         home_choice = input("""
             1. Game Rules
-            2. Play the Game\n
+            2. Login
+            3. Play the Game\n
             Please enter your choice:\t """)
 
         if home_choice == "1":
             game_rules()
         elif home_choice == "2":
+            login_menu()
+        elif home_choice == "3":
             game()
         else:
-            print("You can only select either 1 or 2")
+            print("You can only select either 1 to 3")
             print("Please enter your choice: \t")
             home_screen()
 
@@ -56,13 +60,16 @@ def game_rules():
     while True:
         gr_choice = input("""
             1. Play the Game
-            2. Back to home page\n
+            2. Login
+            3. Back to home page\n
             Please enter your choice:\t """)
 
         if gr_choice == "1":
             game()
         elif gr_choice == "2":
-            home_screen()
+            login_menu()
+        elif gr_choice == "3":
+            game()
         else:
             print("You can only select either 1 or 2")
             print("Please enter your choice: \t")
@@ -116,10 +123,9 @@ def game():
                 print("Player: ", player)
                 print(":( You Lose ):")
 
-    print(" ")
     print("------------------  Play Again  ----------------------")
     print(" ")
-    play_again = input("(Yes / No): "). lower()
+    play_again = input("(Yes / No): ").lower()
     print(" ")
     if play_again == "yes":
         game()

@@ -26,12 +26,15 @@ def login_menu():
     print("Have you been here before?\n")
     login_choice = input("""
         1. Yes
-        2. No \n
+        2. No 
+        3. Home Page\n
         Please enter your option: \t""")
     if login_choice == "1":
         existing_players()
     elif login_choice == "2":
         register()
+    elif login_choice == "3":
+        home_screen() 
     else:
         print("Please select one of the above options: \t \n")
         return
@@ -59,7 +62,7 @@ def register():
 
     user_details = [username, password, email]
     login.append_row(user_details)
-    
+
 
 def update_login_worksheet():
     """
@@ -100,7 +103,26 @@ def existing_players():
     The usernae is retrieved from the first column in login sheet.
     The password is retrieved from the second column from login details.
     """
-    pass
+    print(" ")
+    print("----------------- Welcome Back ------------------------ ")
+    print(" ")
+    print(" Lets get you signed in ....")
+    print(" ")
+    username = input("Create a username: \t")
+    password = input("Enter your password: \t")
+    
+    users = username.get('values', [])
+    if not users:
+        print("Username not found, please try again.")
+        return
+
+    word = password.get('values', [])  
+    if not word:
+        print("Password is incorret, please try again.")
+        return
+    else:
+        print("Welcome back, Lets Play..")
+        game()
 
 
 login_menu()
