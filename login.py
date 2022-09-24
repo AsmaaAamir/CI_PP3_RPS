@@ -12,7 +12,12 @@ SCOPE = [
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('login_details').sheet1
+SHEET = GSPREAD_CLIENT.open('login_details')
+
+WORKSHEET = SHEET.worksheet("login")
+
+# to access the usrname from sheet
+# user = SHEET.col_values(1)
 
 
 def login_menu():
@@ -20,8 +25,8 @@ def login_menu():
     Gives the user the option to login or register.
     """
     print(" ")
-    print("Have you been here before>\n")
-    login_choice = input(""""
+    print("Have you been here before?\n")
+    login_choice = input("""
         1. Yes
         2. No \n
         Please enter your option: \t""")
@@ -38,7 +43,17 @@ def register():
     """
     Allows user to enter their details for registeration.
     """
-    pass
+    print(" ")
+    print("-------------------  Sign Up  -----------------------")
+    print(" ")
+    print(" Lets get you registered....")
+    print(" ")
+    print("           Rules for registration ")
+    print(" ")
+    print(" + Username - Maximum of 10 characters.")
+    print(" + Password - Between 6 - 10 characters, it can have \n   number and sysmbols.")
+    print(" ")
+    print("------------------------------------------------------")
 
 
 def validate_register():
