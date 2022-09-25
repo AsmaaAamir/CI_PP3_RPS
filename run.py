@@ -133,6 +133,10 @@ def game():
         home_screen()
 
 
-home_screen()
-game_rules()
-game()
+def main():
+    home_screen()
+    game_rules()
+    game()
+
+
+main()

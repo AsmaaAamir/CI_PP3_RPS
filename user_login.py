@@ -81,8 +81,10 @@ def update_login_worksheet():
             Please enter your choice:\t """)
         if update_choice == "1":
             game()
+            break
         elif update_choice == "2":
             home_screen()
+            break
         else:
             print("You can only select either 1 or 2")
             print("Please enter your choice: \t")
@@ -94,10 +96,9 @@ def validate_register():
     Raises any errors in Username and passwords if they meet the rules,
     stated in the register varibale.
     """
-    pass
 
 
-def existing_players():
+def existing_players(login):
     """
     Allowing returing player to login to play the game.
     Player will need to use there username and password to login.
@@ -109,23 +110,28 @@ def existing_players():
     print(" ")
     print(" Lets get you signed in ....")
     print(" ")
-    username = input("Create a username: \t")
-    password = input("Enter your password: \t")
-    users = username.find('values')
-    word = password.find('value')
-
-    if not users:
-        print("Username not found, please try again.")
-    if not word:
-        print("Password is incorret, please try again.")
-        existing_players()
-    else:
-        print("Welcome back, Lets Play..")
-        game()
+    username = input("Username: \t")
+    password = input("Password: \t")
+    for row in login:
+        if row[0] == username:
+            print("Player found, please enter your password")
+            break
+        elif row[0] == password:
+            print("Welcome Back")
+        else:
+            print("Player not found!!")
+            existing_players(login)
 
 
-login_menu()
-register()
-validate_register()
-update_login_worksheet()
-existing_players()
+def login_main():
+    """
+    Run all program funcations
+    """
+    login_menu()
+    register()
+    validate_register()
+    update_login_worksheet()
+    existing_players(login)
+
+
+login_main()
