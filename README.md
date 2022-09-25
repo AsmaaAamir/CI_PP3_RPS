@@ -92,7 +92,15 @@ The object of the game is to try to read or
 
 ## Bugs
 
-## Deployment 
+## Deployment
+### Heroku 
+I used Heroky to deploye this application through GitGub. below are the step I took to deploye the appliction:
+    1. Create an account on herkou.com or sign in. 
+    2. Creat a new app, add your project name and choose your region. 
+    3. Click on create app
+    4. Go to Setting 
+    5. 
+
 
 ## Credits 
 

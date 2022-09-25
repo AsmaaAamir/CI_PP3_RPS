@@ -87,7 +87,7 @@ def validate_register_password(password):
     """
     while True:
         if len(password) < 6:
-            print("Make sure your password is atleast 8 characters")
+            print("Make sure your password is atleast 6 characters")
         elif re.search('[0-9]', password) is None:
             print("Make sure your password has a number in it")
         elif re.search('[A-Z]', password) is None:
