@@ -31,7 +31,7 @@ def login_menu():
         3. Home Page\n
         Please enter your option: \t""")
     if login_choice == "1":
-        existing_players()
+        existing_players(login)
     elif login_choice == "2":
         register()
     elif login_choice == "3":
@@ -65,6 +65,34 @@ def register():
     update_login_worksheet()
 
 
+def validate_register_user(username):
+    """
+    Raises any errors in Username and passwords if they meet the rules,
+    stated in the register varibale.
+    """
+    try:
+        if len(username) >= 10:
+            raise ValueError(
+                f"Maximum 10 characters allowed, you provided {len(username)}"
+            )
+    except ValueError as e:
+        print(f"Invalid username: {e}, please try again\n")
+
+
+def validate_register_password(password):
+    """
+    Raises any errors in Username and passwords if they meet the rules,
+    stated in the register varibale.
+    """
+    try:
+        if len(password) >= 10:
+            raise ValueError(
+                f"Maximum 10 characters allowed, you provided {len(password)}"
+            )
+    except ValueError as e:
+        print(f"Invalid password: {e}, please try again\n")
+
+
 def update_login_worksheet():
     """
     Update the login sheet with new players details, their username, password
@@ -89,13 +117,6 @@ def update_login_worksheet():
             print("You can only select either 1 or 2")
             print("Please enter your choice: \t")
             login_menu()
-
-
-def validate_register():
-    """
-    Raises any errors in Username and passwords if they meet the rules,
-    stated in the register varibale.
-    """
 
 
 def existing_players(login):
@@ -123,15 +144,11 @@ def existing_players(login):
             existing_players(login)
 
 
-def login_main():
-    """
-    Run all program funcations
-    """
-    login_menu()
-    register()
-    validate_register()
-    update_login_worksheet()
-    existing_players(login)
+login_menu()
+register()
+validate_register_user(username)
+update_login_worksheet()
+existing_players(login)
 
 
-login_main()
+
