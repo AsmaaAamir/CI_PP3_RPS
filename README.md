@@ -1,31 +1,98 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper & Sissors  
 
-Welcome AsmaaAamir,
+### Developer: Asma Aamir 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## About
+This is a classic game which can be played againt the computer. Where the player select once of the choices from Rock, Paper and Sissors. Then at the same time computer make its choise. depend on what they chose determin whos wins.
+The object of the game is to try to read or git add .
 
-## Reminders
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Table of Content
+1. [Project Goals](#projects-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experiencer)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#users-requirment-and-expectations)
+3. [Technical Design](#technical-design)
+    1. 
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks--tools)
+    3. [Libraries](#libraries)
+5. [Features](#features)
+6. [Testing](#validation) 
+8. [Bugs](#bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-## Creating the Heroku app
+# Prjects Goals
+### User Goals:
+* 
+* 
+* 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Site Owner Goals:
+* 
+* 
+* 
+## User Experience 
+### Target Audience
+* 
+* 
+* 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### User Requirements and Expectations 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## User Stories
+### Users
+* 
+* 
+* 
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Site Owner
+* 
+* 
+* 
 
-Connect your GitHub repository and deploy as normal.
+## Technical Design 
+* Flowchart 
 
-## Constraints
+## Technologies Used
+* Language
+    - Python programming languange was used for the logic of the program. 
+* Frameworks & Tools 
+    - GitHub
+    - Google Cloud Platform
+    - Google Sheets 
+    - Heroku Platform 
+    - Diagrams.net 
+* Libraries
+    * Python Libararies: 
+        - Random: Used in Rock Paper & Scissors game to the user can play againt the computer. 
+    * Third Party Libraries:
+        - gspread: 
+        - google.oauth2.service_account:
+        
+## Festures
+1. Main Menu
+2. Game Rules 
+3. Play Option
+4. Log-in 
+5. Register 
+6. Game 
+7. Play again option 
+8. Quit game option
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Validation
 
------
-Happy coding!
+## Testing 
+
+## Bugs
+
+## Deployment 
+
+## Credits 
+
+## Acknowledgements 
