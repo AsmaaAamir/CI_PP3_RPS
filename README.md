@@ -4,7 +4,7 @@
 
 ## About
 This is a classic game which can be played againt the computer. Where the player select once of the choices from Rock, Paper and Sissors. Then at the same time computer make its choise. depend on what they chose determin whos wins.
-The object of the game is to try to read or git add .
+The object of the game is to try to read or 
 
 
 ## Table of Content
@@ -30,7 +30,8 @@ The object of the game is to try to read or git add .
 # Prjects Goals
 ### User Goals:
 * 
-* 
+* Being able to log in to your exisiting account 
+* Read the rules before you play the game 
 * 
 
 ### Site Owner Goals:

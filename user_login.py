@@ -1,6 +1,8 @@
 import gspread
 from google.oauth2.service_account import Credentials
 
+import re
+
 # from run import home_screen, game
 
 # scope and the constant vars are from love_sandwiches walkt-through project
@@ -53,7 +55,7 @@ def register():
     print("           Rules for registration ")
     print(" ")
     print(" + Username - Maximum of 10 characters.")
-    print(" + Password - Between 6 - 10 characters, it can have \n  number and sysmbols.")
+    print(" + Password - Between 6 - 10 characters, it can have \n  number and 1 capital letter")
     print(" ")
     print("------------------- Your Details ----------------------")
     print(" ")
@@ -70,13 +72,12 @@ def validate_register_user(username):
     Raises any errors in Username and passwords if they meet the rules,
     stated in the register varibale.
     """
-    try:
-        if len(username) >= 10:
-            raise ValueError(
-                f"Maximum 10 characters allowed, you provided {len(username)}"
-            )
-    except ValueError as e:
-        print(f"Invalid username: {e}, please try again\n")
+    while True:
+        if len(username) > 10:
+            print("Make sure your username is maximum of 10 characters")
+        else:
+            print("Saving your Username ")
+            break
 
 
 def validate_register_password(password):
@@ -84,13 +85,16 @@ def validate_register_password(password):
     Raises any errors in Username and passwords if they meet the rules,
     stated in the register varibale.
     """
-    try:
-        if len(password) >= 10:
-            raise ValueError(
-                f"Maximum 10 characters allowed, you provided {len(password)}"
-            )
-    except ValueError as e:
-        print(f"Invalid password: {e}, please try again\n")
+    while True:
+        if len(password) < 6:
+            print("Make sure your password is atleast 8 characters")
+        elif re.search('[0-9]', password) is None:
+            print("Make sure your password has a number in it")
+        elif re.search('[A-Z]', password) is None:
+            print("Make sure your password has a capital letter in it")
+        else:
+            print("Saving you password")
+            break
 
 
 def update_login_worksheet():
@@ -147,6 +151,7 @@ def existing_players(login):
 login_menu()
 register()
 validate_register_user(username)
+validate_register_password(password)
 update_login_worksheet()
 existing_players(login)
 
