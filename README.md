@@ -51,7 +51,7 @@ On the home page users are first shown a welcome page, with header ROCK, PAPER &
 
 - Game rules 
 - log in 
-- Play game <br />
+- Play game  <br />
 
 If a player enters a number that does not match an option that is accessible at any time during the game, they will be prompted to try again. 
 
@@ -65,7 +65,7 @@ The Play Game option prompts users to indicate whether they have already played 
 User are prompted to providde thie perivous login detail when chossing option 1. 
 There is a validation mechamismm used for the username and password. The user has the choice to try again or register if they enter a username or password that havn't been registered. Operation: Press the enter key after entering a numeric value:
 - Try again 
-- Register 
+- Register <br />
 
 Until the username and password entered by the user match the one that had already been registered, they can try again. If it does, then they would be greeted with a message. 
 Alternativly, they can register by choosing the second choice.  
@@ -74,7 +74,8 @@ Alternativly, they can register by choosing the second choice.
 Users can register to creat a new user by choosing the option from the login menu. 
 The user will be prompted for their username and password in that order. The validation process involves both values. 
 - Username must only contaon the leters a-z and can be no longer then 10 characters. 
-- Password can be anywhere from 6 to 10 charaters. It can also inculde a capital letter and the digits 0-9. 
+- Password can be anywhere from 6 to 10 charaters. It can also inculde a capital letter and the digits 0-9. <br />
+
 once registration is complete, the user is greeted with a notice that they have successfully registered and gives the choice to play or go the home page. 
 
 #### Game and Plat again
