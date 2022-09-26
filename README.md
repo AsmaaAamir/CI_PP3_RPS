@@ -37,7 +37,7 @@ A traditional game that I played with my sibling to decide who would watch Tv fi
 ### Site Owner Goals:
 * Make a game that is simple and intuitive to play.
 * Make sure that players comprehend the game's goal.
-* 
+
 
 ## User Experience 
 ### Target Audience
@@ -48,9 +48,11 @@ The game's doesn't have a target audience. However, in accordance with the tradi
 ### User Manual
 #### Home Page
 On the home page users are first shown a welcome page, with header ROCK, PAPER & SISSORS running diaginally. The user can choose from a few option below the welcome and header. Operation: Enter the entry key after entering a numeric value. 
+
 - Game rules 
 - log in 
-- Play game
+- Play game <br />
+
 If a player enters a number that does not match an option that is accessible at any time during the game, they will be prompted to try again. 
 
 #### Game Rules
@@ -64,7 +66,8 @@ User are prompted to providde thie perivous login detail when chossing option 1.
 There is a validation mechamismm used for the username and password. The user has the choice to try again or register if they enter a username or password that havn't been registered. Operation: Press the enter key after entering a numeric value:
 - Try again 
 - Register 
-until the username and password entered by the user match the one that had already been registered, they can try again. If it does, then they would be greeted with a message. 
+
+Until the username and password entered by the user match the one that had already been registered, they can try again. If it does, then they would be greeted with a message. 
 Alternativly, they can register by choosing the second choice.  
 
 #### Registration for new players
