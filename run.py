@@ -1,7 +1,8 @@
 import random
+import re
 import gspread
 from google.oauth2.service_account import Credentials
-import re
+
 
 # scope and the constant vars are from love_sandwiches walkt-through project
 # by code institute
@@ -170,7 +171,7 @@ def login_menu():
         3. Home Page\n
         Please enter your option: \t""")
     if login_choice == "1":
-        existing_players(login)
+        existing_players()
     elif login_choice == "2":
         register()
     elif login_choice == "3":
@@ -264,7 +265,7 @@ def update_login_worksheet():
             login_menu()
 
 
-def existing_players(SHEET):
+def existing_players():
     """
     Allowing returing player to login to play the game.
     Player will need to use there username and password to login.
@@ -280,13 +281,19 @@ def existing_players(SHEET):
     password = input("Password: \t")
     username = SHEET.col_values(1)
     password = SHEET.col_values(2)
-    if username in username:
-        print(" ")
-        print("Found Player")
+    udetails = SHEET
+    if not [i for i in udetails if i["username"] == username]:
+        print("No player found\n")
+        print("Please check details and try again\n")
+        existing_players()
     else:
-        print(" ")
-        print("Did not find the player, please try again")
-        login_menu()
+        m_username = [i for i in udetails if i["username"] == username][0]
+    if password == m_username["password"]:
+        print("login successful")
+        game()
+    else:
+        print("Unable to localte the player, please try again")
+        existing_players()
 
 
 def exit_game():
@@ -303,8 +310,7 @@ game()
 login_menu()
 register()
 validate_register_user(username)
-validate_register_password(password)
+validate_register_password()
 update_login_worksheet()
-existing_players(SHEET)
+existing_players()
 exit_game()
-
