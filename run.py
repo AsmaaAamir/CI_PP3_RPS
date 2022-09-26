@@ -71,11 +71,11 @@ def game_rules():
     print("Ways your can  *** WIN *** ")
     print(" ")
     print(
-        "1. If you choose Rock, you will win against Scissors,\n   but lose against Paper.")
+        "1.You choose Rock, you will win against Scissor\n   but lose against Paper.")
     print(
-        "2. If you choose Paper, you will win against Rock,\n  but lose against Sissors.")
+        "2.You choose Paper, you will win against Rock\n  but lose against Sissor.")
     print(
-        "3. If you choose Sicssors, you will win against Paper,\n   but lose against Rock.")
+        "3.You choose Sicssor, you will win against Paper\n   but lose against Rock.")
     print(" ")
     print("------------------------------------------------------")
     while True:
@@ -192,8 +192,8 @@ def register():
     print(" ")
     print("           Rules for registration ")
     print(" ")
-    print(" + Username - Maximum of 10 characters.")
-    print(" + Password - Between 6 - 10 characters, it can have \n  number and 1 capital letter")
+    print("+ Username - Maximum of 10 characters.")
+    print("+ Password - Between 6 - 10 character numbers and 1 capital letter")
     print(" ")
     print("------------------- Your Details ----------------------")
     print(" ")
@@ -210,16 +210,17 @@ def validate_register_user(username):
     Raises any errors in Username and passwords if they meet the rules,
     stated in the register varibale.
     """
-    while True:
-        if len(username) > 10:
-            print("Make sure your username is maximum of 10 characters")
-            break
-        else:
-            print("Saving your Username ")
-            break
+    try:
+        if len(username) >= 10:
+            raise ValueError(
+                f"Maximum of 10 characters. You have enter {len(username)}"
+                )
+    except ValueError as i:
+        print(f"Too many characters: {i} Please try again")
+        register()
 
 
-def validate_register_password(password):
+def validate_register_pass(password):
     """
     Raises any errors in Username and passwords if they meet the rules,
     stated in the register varibale.
@@ -279,8 +280,6 @@ def existing_players():
     print(" ")
     username = input("Username: \t")
     password = input("Password: \t")
-    username = SHEET.col_values(1)
-    password = SHEET.col_values(2)
     udetails = SHEET
     if not [i for i in udetails if i["username"] == username]:
         print("No player found\n")
@@ -309,8 +308,8 @@ game_rules()
 game()
 login_menu()
 register()
-validate_register_user(username)
-validate_register_password()
+validate_register_user(register)
+validate_register_pass(register)
 update_login_worksheet()
 existing_players()
 exit_game()
