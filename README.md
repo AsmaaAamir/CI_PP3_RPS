@@ -151,3 +151,7 @@ I used Heroky to deploye this application through GitGub. below are the step I t
 ## Credits 
 
 ## Acknowledgements 
+I would like to take this opportunit to thank you :
+* My mentor Mo Shami for his feedback , advise and guidance
+* tutor Ger for helping me fix registeration issue
+* My mum Farida Liaqat for looking after my daughter and my daughter Zainab Rana for being very patient with me. 
