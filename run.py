@@ -39,7 +39,8 @@ def home_screen():
         home_choice = input("""
             1. Game Rules
             2. Login
-            3. Play the Game\n
+            3. Play the Game
+            4. Exist \n
             Please enter your choice:\t """)
 
         if home_choice == "1":
@@ -48,6 +49,8 @@ def home_screen():
             login_menu()
         elif home_choice == "3":
             game()
+        elif home_choice == "4":
+            exit()
         else:
             print("You can only select either 1 to 3")
             print("Please enter your choice: \t")
@@ -225,19 +228,10 @@ def validate_register_pass(password):
     Raises any errors in Username and passwords if they meet the rules,
     stated in the register varibale.
     """
-    while True:
-        if len(password) < 6:
-            print("Make sure your password is atleast 6 characters")
-            break
-        elif re.search('[0-9]', password) is None:
-            print("Make sure your password has a number in it")
-            break
-        elif re.search('[A-Z]', password) is None:
-            print("Make sure your password has a capital letter in it")
-            break
-        else:
-            print("Saving you password")
-            break
+    length_error = len(password) >= 10
+    digit_error = re.search(r"\d", password) is None
+    uppercase_error = re.search(r"[A-Z]", password) is None
+    return length_error and digit_error and uppercase_error
 
 
 def update_login_worksheet():
@@ -278,22 +272,22 @@ def existing_players():
     print(" ")
     print(" Lets get you signed in ....")
     print(" ")
+    udetails = SHEET
     username = input("Username: \t")
     password = input("Password: \t")
-    udetails = SHEET
-    if not [i for i in udetails if i["username"] == username]:
+    if not [x for x in udetails if x["username"] == username]:
         print("No player found\n")
         print("Please check details and try again\n")
         existing_players()
-    else:
-        m_username = [i for i in udetails if i["username"] == username][0]
+    else:     
+        m_username = [x for x in udetails if x["username"] == username][0]
     if password == m_username["password"]:
-        print("login successful")
+        print("Login successful")
         game()
     else:
-        print("Unable to localte the player, please try again")
+        print("Unable to localate the player, please try again")
         existing_players()
-
+    
 
 def exit_game():
     """
