@@ -59,6 +59,8 @@ The object of the game is to try to read or
 
 ## Technical Design 
 * Flowchart 
+The application's structure and logic are summarised in th diagram below. 
+<details><img src="docs/flowchart.png"></details>
 
 ## Technologies Used
 * Language
