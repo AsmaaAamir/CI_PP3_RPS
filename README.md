@@ -149,6 +149,7 @@ I used Heroky to deploye this application through GitGub. below are the step I t
 
 
 ## Credits 
+* Code Institute - for Git template ide and "Love Sandwiches - Essentials Project" which helped me with connecting the Google Spreadsheet to my project.
 
 ## Acknowledgements 
 I would like to take this opportunit to thank you :
