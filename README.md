@@ -75,7 +75,15 @@ The user will be prompted for their username and password in that order. The val
 once registration is complete, the user is greeted with a notice that they have successfully registered and gives the choice to play or go the home page. 
 
 #### Game and Plat again
+The user makes the first move by selecting rock, paper or sissors by tyoing it on the keybaord. Then computer makes its move and the game's outcome is displayed to the user. 
+If the users enter anthying other then rock ,paper and sissord  in the consol, the application will keep presenting the same option. 
+When the user wins, lose or ties a notice stating that they can play agian will appear. If they select yes the game will restart. if not, it offers the user below optiom:
+- Play again 
+- Home page 
+- Quit 
 
+#### Quit game 
+The application display a goodbye message whne the user exits. 
 
 
 ## User Stories
