@@ -3,8 +3,7 @@
 ### Developer: Asma Aamir 
 
 ## About
-This is a classic game which can be played againt the computer. Where the player select once of the choices from Rock, Paper and Sissors. Then at the same time computer make its choise. depend on what they chose determin whos wins.
-The object of the game is to try to read or 
+A traditional game that I played with my sibling to decide who would watch Tv first. Here, I've created it for computer play with user. Where the user make a choice to choose from Rock, Paper and Sissors. The computer makes the decison simultaneously. Who wins will depned on the choices they make. You must make an effort to forsee you adversary's futuer action if you to outwit them. 
 
 
 ## Table of Content
@@ -14,6 +13,7 @@ The object of the game is to try to read or
 2. [User Experience](#user-experiencer)
     1. [Target Audience](#target-audience)
     2. [User Requrements and Expectations](#users-requirment-and-expectations)
+    3. [User manual]()
 3. [Technical Design](#technical-design)
     1. 
 4. [Technologies Used](#technologies-used)
@@ -27,24 +27,37 @@ The object of the game is to try to read or
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
 
-# Prjects Goals
+# Projects Goals
 ### User Goals:
-* 
-* Being able to log in to your exisiting account 
-* Read the rules before you play the game 
-* 
+* Paly a simple, enjoable gam
+* Having access to your existing account 
+* Before playing the game, read the rules.
+
 
 ### Site Owner Goals:
-* 
-* 
-* 
-## User Experience 
-### Target Audience
-* 
-* 
+* Make a game that is simple and intuitive to play.
+* Make sure that players comprehend the game's goal.
 * 
 
-### User Requirements and Expectations 
+## User Experience 
+### Target Audience
+The game's doesn't have a target audience. However, in accordance with the traditional game, I would advise that participants be at least 4 year & above and be computer literate.  
+
+### User Requirements and Expectations
+
+### User Manual
+#### Home Page
+On the home page users are first shown a welcome page, with header ROCK, PAPER & SISSORS running diaginally. The user can choose from a few option below the welcome and header. Operation: Enter the entry key after entering a numeric value. 
+    - Game rules 
+    - log in 
+    - Play game
+If a player enters a number that does not match an option that is accessible at any time during the game, they will be prompted to try again. 
+
+#### Game Rules
+User can read a brief description of the game rules by selecting the first option to examine the game rules, after which they can return to the main menu or login page, simply by chossing the option. 
+
+#### Play 
+
 
 ## User Stories
 ### Users
@@ -60,11 +73,11 @@ The object of the game is to try to read or
 ## Technical Design 
 * Flowchart 
 The application's structure and logic are summarised in th diagram below. 
-<details><img src="docs/flowchart.png"></details>
+<details><summary>Flowchart</summary><img src="docs/flowchart.png"></details>
 
 ## Technologies Used
 * Language
-    - Python programming languange was used for the logic of the program. 
+    - The logic of the programme was created using the Python programming language. 
 * Frameworks & Tools 
     - GitHub
     - Google Cloud Platform
