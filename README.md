@@ -48,15 +48,34 @@ The game's doesn't have a target audience. However, in accordance with the tradi
 ### User Manual
 #### Home Page
 On the home page users are first shown a welcome page, with header ROCK, PAPER & SISSORS running diaginally. The user can choose from a few option below the welcome and header. Operation: Enter the entry key after entering a numeric value. 
-    - Game rules 
-    - log in 
-    - Play game
+- Game rules 
+- log in 
+- Play game
 If a player enters a number that does not match an option that is accessible at any time during the game, they will be prompted to try again. 
 
 #### Game Rules
 User can read a brief description of the game rules by selecting the first option to examine the game rules, after which they can return to the main menu or login page, simply by chossing the option. 
 
 #### Play 
+The Play Game option prompts users to indicate whether they have already played the game or not. If they have, they will be directed to the login page; if not they will be directed to the registration page. 
+
+#### Log in 
+User are prompted to providde thie perivous login detail when chossing option 1. 
+There is a validation mechamismm used for the username and password. The user has the choice to try again or register if they enter a username or password that havn't been registered. Operation: Press the enter key after entering a numeric value:
+- Try again 
+- Register 
+until the username and password entered by the user match the one that had already been registered, they can try again. If it does, then they would be greeted with a message. 
+Alternativly, they can register by choosing the second choice.  
+
+#### Registration for new players
+Users can register to creat a new user by choosing the option from the login menu. 
+The user will be prompted for their username and password in that order. The validation process involves both values. 
+- Username must only contaon the leters a-z and can be no longer then 10 characters. 
+- Password can be anywhere from 6 to 10 charaters. It can also inculde a capital letter and the digits 0-9. 
+once registration is complete, the user is greeted with a notice that they have successfully registered and gives the choice to play or go the home page. 
+
+#### Game and Plat again
+
 
 
 ## User Stories

@@ -1,4 +1,5 @@
 import random
+from user_login import login_menu
 
 # from user_login import login_menu
 
@@ -74,6 +75,7 @@ def game_rules():
             print("You can only select either 1 or 2")
             print("Please enter your choice: \t")
             game_rules()
+
 
 
 def game():
