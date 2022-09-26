@@ -65,12 +65,16 @@ def game_rules():
     print(" ")
     print("1. You would be playing againt the computer.")
     print("2. You can choose between Rock, Paper and Siccsors.")
-    print("3. You type in your choose then it the computer display it choice.\n")
+    print(
+        "3. You type in your choose then it the computer display it choice.\n")
     print("Ways your can  *** WIN *** ")
     print(" ")
-    print("1. If you choose Rock, you will win against Scissors,\n   but lose against Paper.")
-    print("2. If you choose Paper, you will win against Rock,\n   but lose against Sissors.")
-    print("3. If you choose Sicssors, you will win against Paper,\n   but lose against Rock.")
+    print(
+        "1. If you choose Rock, you will win against Scissors,\n   but lose against Paper.")
+    print(
+        "2. If you choose Paper, you will win against Rock,\n  but lose against Sissors.")
+    print(
+        "3. If you choose Sicssors, you will win against Paper,\n   but lose against Rock.")
     print(" ")
     print("------------------------------------------------------")
     while True:
@@ -92,7 +96,6 @@ def game_rules():
             game_rules()
 
 
-
 def game():
     """
     Code for the game to play against the computer.
@@ -111,34 +114,39 @@ def game():
             print("Computer: ", computer)
             print("Player: ", player)
             print("! Tie !")
-
         elif player == "rock":
             if computer == "sissors":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print("** You Win **")
+                break
             if computer == "paper":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print(":( You Lose ):")
+                break
         elif player == "paper":
             if computer == "rock":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print("** You Win **")
+                break
             if computer == "sissors":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print(":( You Lose ):")
+                break
         elif player == "sissors":
             if computer == "paper":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print("** You Win **")
+                break
             if computer == "rock":
                 print("Computer: ", computer)
                 print("Player: ", player)
                 print(":( You Lose ):")
+                break
 
     print("------------------  Play Again  ----------------------")
     print(" ")
@@ -204,6 +212,7 @@ def validate_register_user(username):
     while True:
         if len(username) > 10:
             print("Make sure your username is maximum of 10 characters")
+            break
         else:
             print("Saving your Username ")
             break
@@ -217,10 +226,13 @@ def validate_register_password(password):
     while True:
         if len(password) < 6:
             print("Make sure your password is atleast 6 characters")
+            break
         elif re.search('[0-9]', password) is None:
             print("Make sure your password has a number in it")
+            break
         elif re.search('[A-Z]', password) is None:
             print("Make sure your password has a capital letter in it")
+            break
         else:
             print("Saving you password")
             break
@@ -264,17 +276,25 @@ def existing_players(SHEET):
     print(" ")
     print(" Lets get you signed in ....")
     print(" ")
-    usernames = input("Username: \t")
-    passwords = input("Password: \t")
-    usernames = SHEET.col_values(1)
-    passwords = SHEET.col_values(2)
-    if usernames in usernames:
+    username = input("Username: \t")
+    password = input("Password: \t")
+    username = SHEET.col_values(1)
+    password = SHEET.col_values(2)
+    if username in username:
         print(" ")
         print("Found Player")
     else:
         print(" ")
         print("Did not find the player, please try again")
-        existing_players(SHEET)
+        login_menu()
+
+
+def exit_game():
+    """
+    Exit the programme when chosen from the main menu.
+    """
+    print("----------------- Thank you for playing --------------------")
+    print("------------------ Have a lovely day! ------------------------")
 
 
 home_screen()
@@ -286,4 +306,5 @@ validate_register_user(username)
 validate_register_password(password)
 update_login_worksheet()
 existing_players(SHEET)
+exit_game()
 

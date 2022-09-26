@@ -103,6 +103,7 @@ The application display a goodbye message whne the user exits.
 
 ## Technical Design 
 * Flowchart 
+
 The application's structure and logic are summarised in th diagram below. 
 <details><summary>Flowchart</summary><img src="docs/flowchart.png"></details>
 
