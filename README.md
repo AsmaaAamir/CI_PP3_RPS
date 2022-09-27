@@ -200,11 +200,13 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Login | On the main menu select login option 2 and it ask you question if answer Yes. Then it ask you to enter username and password | Checks with google sheet and welcomes the player | Works as expected|
 
 4. I want to be able o play the game again without going back to home page
+
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Play again | Once you played the game application will ask you if you would like to play again and you select yes until user want to play | give the option to play again | works as expected|
 
 5. I want user to find easy to navigate around the application
+
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Main menu & option through the application | you have the main menu giving option and once you go a different page you still have option to come back or carry on | Easy navigate system | works as expected| 
@@ -216,12 +218,14 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Game | Play the game and win | Game works | Works as expected | 
 
 7. I want the username and password to saved for returning users
+
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Registration and login | your log in detail are saved in google sheet once you register. When your login with username and password google sheet is checked to make sure we have your details| save the new user details and welcomes the returning user back | Works as expected|
 
 
 8. I the application to have data validation and instruction for users on how to properly register. 
+
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Registration| there are rules for regards the username and password for validation | if the details are incorrect it bring up a error until its fixed | works as expected |
