@@ -162,6 +162,8 @@ def login_menu():
     Gives the user the option to login or register.
     """
     print(" ")
+    print("------------------  Log In  ----------------------")
+    print(" ")
     print("Have you been here before?\n")
     login_choice = input("""
         1. Yes

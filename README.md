@@ -131,12 +131,12 @@ The application's structure and logic are summarised in th diagram below.
         - gspread: 
         - google.oauth2.service_account:
         
-## Festures
+## Features
 1. Main Menu
+    * 
 2. Game Rules 
-3. Play Option
-4. Log-in 
-5. Register 
+3. Log-in 
+4. Register 
 6. Game 
 7. Play again option 
 8. Quit game option
