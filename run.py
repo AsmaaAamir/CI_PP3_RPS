@@ -1,5 +1,4 @@
 import random
-import re
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -39,8 +38,7 @@ def home_screen():
         home_choice = input("""
             1. Game Rules
             2. Login
-            3. Play the Game
-            4. Exist \n
+            3. Exist \n
             Please enter your choice:\t """)
 
         if home_choice == "1":
@@ -48,8 +46,6 @@ def home_screen():
         elif home_choice == "2":
             login_menu()
         elif home_choice == "3":
-            game()
-        elif home_choice == "4":
             exit()
         else:
             print("You can only select either 1 to 3")
@@ -69,16 +65,13 @@ def game_rules():
     print(" ")
     print("1. You would be playing againt the computer.")
     print("2. You can choose between Rock, Paper and Siccsors.")
-    print(
-        "3. You type in your choose then it the computer display it choice.\n")
+    print("3. You type in your choose then it the computer display it choice.")
+    print(" ")
     print("Ways your can  *** WIN *** ")
     print(" ")
-    print(
-        "1.You choose Rock, you will win against Scissor\n   but lose against Paper.")
-    print(
-        "2.You choose Paper, you will win against Rock\n  but lose against Sissor.")
-    print(
-        "3.You choose Sicssor, you will win against Paper\n   but lose against Rock.")
+    print("1.You choose Rock, you will win against Scissor\n   but lose against Paper.")
+    print("2.You choose Paper, you will win against Rock\n  but lose against Sissor.")
+    print("3.You choose Sicssor, you will win against Paper\n   but lose against Rock.")
     print(" ")
     print("------------------------------------------------------")
     while True:
@@ -187,6 +180,10 @@ def login_menu():
 def register():
     """
     Allows user to enter their details for registeration.
+    Raises any errors in Username and passwords if they meet the rules,
+    stated in the register varibale.
+    Raises any errors in Username and passwords if they meet the rules,
+    stated in the register varibale.
     """
     print(" ")
     print("-------------------  Sign Up  -----------------------")
@@ -206,32 +203,22 @@ def register():
     user_details = [username, password, email]
     login.append_row(user_details)
     update_login_worksheet()
-
-
-def validate_register_user(username):
-    """
-    Raises any errors in Username and passwords if they meet the rules,
-    stated in the register varibale.
-    """
-    try:
-        if len(username) >= 10:
-            raise ValueError(
-                f"Maximum of 10 characters. You have enter {len(username)}"
-                )
-    except ValueError as i:
-        print(f"Too many characters: {i} Please try again")
+    if len(username) >= 10:
+        print("Username can't be more the 10 characters.")
+        print("Choose another Username")
         register()
-
-
-def validate_register_pass(password):
-    """
-    Raises any errors in Username and passwords if they meet the rules,
-    stated in the register varibale.
-    """
-    length_error = len(password) >= 10
-    digit_error = re.search(r"\d", password) is None
-    uppercase_error = re.search(r"[A-Z]", password) is None
-    return length_error and digit_error and uppercase_error
+    elif username in login.findall(username):
+        print("This username already exist. Please sign in")
+        print("Re-try")
+        register()
+    else:
+        register()
+    if len(password) <= 6:
+        print("Password can't be more the 10 characters.")
+        print("Choose another password")
+        register()
+    else:
+        update_login_worksheet()
 
 
 def update_login_worksheet():
@@ -294,7 +281,7 @@ def existing_players():
         print("    Please check details and try again\n")
     else:
         existing_players()
-    
+
 
 def exit_game():
     """
@@ -309,8 +296,6 @@ game_rules()
 game()
 login_menu()
 register()
-validate_register_user(register)
-validate_register_pass(register)
 update_login_worksheet()
 existing_players()
 exit_game()
