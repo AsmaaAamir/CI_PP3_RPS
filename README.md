@@ -141,30 +141,34 @@ The page's primary message welcomes you and displays the game of Rock, Paper, an
 <img src="docs/featuers/main-menu.png"></details>
 
 2. Game Rules 
-The Game rules option cover the rule on how to play the game, who you will be playing the game with. Also how you can win the game. 
-<details><summary>Game Rules </summary>
-<img src="docs/featuers/gam-rules.png"></details>
+    The Game rules option cover the rule on how to play the game, who you will be playing the game with. Also how you can win the game. 
+    <details><summary>Game Rules </summary>
+    <img src="docs/featuers/gam-rules.png"></details>
 
 3. Log-in 
-The application asks you if you've played before when you select the login option. There are 3 choices.
-* Yes - Takes you to your login page, welcomes you with a message, and then requests your username and password. You can play the game if your registration information is accurate.
-* No - Takes you to registration page.
-* Home Page - Take you back to home page. 
-<details><summary>Log In </summary>
-<img src="docs/featuers/log-in.png"></details>
+    The application asks you if you've played before when you select the login option. There are 3 choices.
+    * Yes - Takes you to your login page, welcomes you with a message, and then requests your username and password. You can play the game if your registration information is accurate.
+    * No - Takes you to registration page.
+    * Home Page - Take you back to home page. 
+    <details><summary>Log In </summary>
+    <img src="docs/featuers/log-in.png"></details>
 
 4. Register 
- When you go to the registration page, you can see the registration regulations and the sign up subheading. You will then be prompted by the application to enter your username, password, and email address. If everything is OK, you will be greeted with a notice that says "storing your details" and "your registered."
-<details><summary>Registration </summary>
-<img src="docs/featuers/registration.png"></details>
+    When you go to the registration page, you can see the registration regulations and the sign up subheading. You will then be prompted by the application to enter your username, password, and email address. If everything is OK, you will be greeted with a notice that says "storing your details" and "your registered."
+    <details><summary>Registration </summary>
+    <img src="docs/featuers/registration.png"></details>
 
 5. Game and Play again  
-Following registration or logging in, we can play the game. The subheading "Let's start" is the first thing you see, followed by your three options: "rock," "paper," or "scissors." When you write what you want, the machine makes a choice, and you immediately receive the outcome. letting you know if there was a tie, a win, or a loss. You then have the option to play again.
-<details><summary>Game & Play again </summary>
-<img src="docs/featuers/game.png"></details>
+    Following registration or logging in, we can play the game. The subheading "Let's start" is the first thing you see, followed by your three options: "rock," "paper," or "scissors." When you write what you want, the machine makes a choice, and you immediately receive the outcome. letting you know if there was a tie, a win, or a loss. You then have the option to play again.
+    <details><summary>Game & Play again </summary>
+    <img src="docs/featuers/game.png"></details>
 
-6. Quit game 
+6. Quit game
+    once you select the opion to exist the game your are greet with message saying 'thank you for play' and 'have a lovley day'. 
+    <details><summary>Exist </summary>
+    <img src="docs/featuers/exist.png"></details>
 
+    
 ## Validation
 
 ## Testing 
