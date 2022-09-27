@@ -186,12 +186,19 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Main Menu| on the home page once you scrol down you see the main menu | CLear and easy access | Works as expected|  
+
 2. I want to be able to read the game's rules.
+
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
-3. I want the application to rememeber my login so i wont have register again
+| Game Rules | On the main menu you have option number 1 taht takes you to game rules | Brings up game rules | works as expected |
+
+3. I want the application to rememeber my login so i won't have register again
+
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
+| Login | On the main menu select login option 2 and it ask you question if answer Yes. Then it ask you to enter username and password | Checks with google sheet and welcomes the player | Works as expected|
+
 4. I want to be able o play the game again without going back to home page
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
