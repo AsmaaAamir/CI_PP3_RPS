@@ -1,6 +1,7 @@
 # Rock Paper & Sissors  
 
 ### Developer: Asma Aamir 
+(docs/homescreen.png)
 
 ## About
 A traditional game that I played with my sibling to decide who would watch Tv first. Here, I've created it for computer play with user. Where the user make a choice to choose from Rock, Paper and Sissors. The computer makes the decison simultaneously. Who wins will depned on the choices they make. You must make an effort to forsee you adversary's futuer action if you to outwit them. 
