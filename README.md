@@ -202,10 +202,10 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Login | On the main menu select login option 2 and it ask you question if answer Yes. Then it ask you to enter username and password | Checks with google sheet and welcomes the player | Works as expected|
-<details><summary>Story 4 </summary>
-    <img src="docs/storys-testing/story4.png"></details>
+<details><summary>Story 3 </summary>
+    <img src="docs/storys-testing/story3.png"></details>
 
-4. I want to be able o play the game again without going back to home page
+4. I want to be able to play the game again without going back to home page
 
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
