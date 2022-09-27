@@ -15,7 +15,6 @@ A traditional game that I played with my sibling to decide who would watch Tv fi
     2. [User Requrements and Expectations](#users-requirment-and-expectations)
     3. [User manual]()
 3. [Technical Design](#technical-design)
-    1. 
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks--tools)
@@ -33,11 +32,9 @@ A traditional game that I played with my sibling to decide who would watch Tv fi
 * Having access to your existing account 
 * Before playing the game, read the rules.
 
-
 ### Site Owner Goals:
 * Make a game that is simple and intuitive to play.
 * Make sure that players comprehend the game's goal.
-
 
 ## User Experience 
 ### Target Audience
@@ -50,7 +47,6 @@ The game's doesn't have a target audience. However, in accordance with the tradi
 ### Home Page
 
 On the home page users are first shown a welcome page, with header ROCK, PAPER & SISSORS running diaginally. The user can choose from a few option below the welcome and header. Operation: Enter the entry key after entering a numeric value. 
-
 - Game rules 
 - log in 
 - Play game  <br />
@@ -100,14 +96,16 @@ The application display a goodbye message whne the user exits.
 
 ## User Stories
 ### Users
-* 
-* 
-* 
+1. I want there to be distinct options on the main menu
+2. I want to be able to read the game's rules.
+3. I want the application to rememeber my login so i wont have register again
+4. I want to be able o play the game again without going back to home page
 
 ### Site Owner
-* 
-* 
-* 
+5. I want user to find easy to navigate around the application
+6. I want users to enjoy themselves while the play the game
+7. I want the username and password to saved for returning users
+9. I the application to have data validation and instruction for users on how to properly register. 
 
 ## Technical Design 
 * Flowchart 
@@ -133,15 +131,17 @@ The application's structure and logic are summarised in th diagram below.
         
 ## Features
 1. Main Menu
-The page's primary message welcomes you and displays the game of Rock, Paper, and Scissors diagonally. Subheading "Main Menu" with three choices follows:
-* Game rules
-* Login 
-* Exist 
-<details><summary>Main Menu </summary>
-<img src="docs/featuers/main-menu.png"></details>
+    The page's primary message welcomes you and displays the game of Rock, Paper, and Scissors diagonally. Subheading "Main Menu" with three choices follows:
+    * Game rules
+    * Login 
+    * Exist 
+    * User stories covered: 1 and 5
+    <details><summary>Main Menu </summary>
+    <img src="docs/featuers/main-menu.png"></details>
 
 2. Game Rules 
     The Game rules option cover the rule on how to play the game, who you will be playing the game with. Also how you can win the game. 
+    * User stories covered: 2 and 5
     <details><summary>Game Rules </summary>
     <img src="docs/featuers/gam-rules.png"></details>
 
@@ -150,16 +150,19 @@ The page's primary message welcomes you and displays the game of Rock, Paper, an
     * Yes - Takes you to your login page, welcomes you with a message, and then requests your username and password. You can play the game if your registration information is accurate.
     * No - Takes you to registration page.
     * Home Page - Take you back to home page. 
+    * User stories covered: 3 and 7
     <details><summary>Log In </summary>
     <img src="docs/featuers/log-in.png"></details>
 
 4. Register 
     When you go to the registration page, you can see the registration regulations and the sign up subheading. You will then be prompted by the application to enter your username, password, and email address. If everything is OK, you will be greeted with a notice that says "storing your details" and "your registered."
+    * User stories covered: 9
     <details><summary>Registration </summary>
     <img src="docs/featuers/registration.png"></details>
 
 5. Game and Play again  
     Following registration or logging in, we can play the game. The subheading "Let's start" is the first thing you see, followed by your three options: "rock," "paper," or "scissors." When you write what you want, the machine makes a choice, and you immediately receive the outcome. letting you know if there was a tie, a win, or a loss. You then have the option to play again.
+    User stories covered: 4 and 6 
     <details><summary>Game & Play again </summary>
     <img src="docs/featuers/game.png"></details>
 
@@ -168,7 +171,7 @@ The page's primary message welcomes you and displays the game of Rock, Paper, an
     <details><summary>Exist </summary>
     <img src="docs/featuers/exist.png"></details>
 
-    
+
 ## Validation
 
 ## Testing 
