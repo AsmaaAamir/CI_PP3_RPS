@@ -105,7 +105,7 @@ The application display a goodbye message whne the user exits.
 5. I want user to find easy to navigate around the application
 6. I want users to enjoy themselves while the play the game
 7. I want the username and password to saved for returning users
-9. I the application to have data validation and instruction for users on how to properly register. 
+8. I the application to have data validation and instruction for users on how to properly register. 
 
 ## Technical Design 
 * Flowchart 
@@ -181,6 +181,33 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 
 ## Testing 
 
+1. I want there to be distinct options on the main menu
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+| Main Menu| on the home page once you scrol down you see the main menu | CLear and easy access | Works as expected|  
+2. I want to be able to read the game's rules.
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+3. I want the application to rememeber my login so i wont have register again
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+4. I want to be able o play the game again without going back to home page
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+5. I want user to find easy to navigate around the application
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+6. I want users to enjoy themselves while the play the game
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+7. I want the username and password to saved for returning users
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+8. I the application to have data validation and instruction for users on how to properly register. 
+| Feature  | Action  | Expected Result  | Result |
+|----------|---------|------------------|--------|
+
+
 ## Bugs
 
 ## Deployment
@@ -213,7 +240,6 @@ You can create a copy of the original repository to see or edit with out changin
 4. You would need to change the curent working directory to where you want the cloned directory to be made.
 5. Then in the IDE'S terminal type 'git clone' then paste the URL link that you copied from HTTPS.
 6. After pressing enter, that would have created your local clone.  
-
 
 
 ## Credits 
