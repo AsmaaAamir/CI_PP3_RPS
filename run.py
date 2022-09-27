@@ -91,7 +91,7 @@ def game_rules():
         elif gr_choice == "2":
             login_menu()
         elif gr_choice == "3":
-            game()
+            home_screen()
         else:
             print("You can only select either 1 or 2")
             print("Please enter your choice: \t")
