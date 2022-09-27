@@ -194,24 +194,32 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Game Rules | On the main menu you have option number 1 taht takes you to game rules | Brings up game rules | works as expected |
+<details><summary>Story 2 </summary>
+    <img src="docs/storys-testing/story2.png"></details>
 
 3. I want the application to rememeber my login so i won't have register again
 
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Login | On the main menu select login option 2 and it ask you question if answer Yes. Then it ask you to enter username and password | Checks with google sheet and welcomes the player | Works as expected|
+<details><summary>Story 4 </summary>
+    <img src="docs/storys-testing/story4.png"></details>
 
 4. I want to be able o play the game again without going back to home page
 
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Play again | Once you played the game application will ask you if you would like to play again and you select yes until user want to play | give the option to play again | works as expected|
+<details><summary>Story 4 </summary>
+    <img src="docs/storys-testing/story4.png"></details>
 
 5. I want user to find easy to navigate around the application
 
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Main menu & option through the application | you have the main menu giving option and once you go a different page you still have option to come back or carry on | Easy navigate system | works as expected| 
+<details><summary>Story 5 </summary>
+    <img src="docs/storys-testing/story5.png"></details>
 
 6. I want users to enjoy themselves while the play the game
 
@@ -224,6 +232,8 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Registration and login | your log in detail are saved in google sheet once you register. When your login with username and password google sheet is checked to make sure we have your details| save the new user details and welcomes the returning user back | Works as expected|
+<details><summary>Story 7 </summary>
+    <img src="docs/storys-testing/story7.png"></details>
 
 
 8. I the application to have data validation and instruction for users on how to properly register. 
@@ -231,7 +241,8 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Registration| there are rules for regards the username and password for validation | if the details are incorrect it bring up a error until its fixed | works as expected |
-
+<details><summary>Story 8 </summary>
+    <img src="docs/storys-testing/story8.png"></details>
 
 ## Bugs
 
