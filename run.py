@@ -39,7 +39,7 @@ def home_screen():
             1. Game Rules
             2. Login
             3. Exist \n
-            Please enter your choice:\t """)
+            Please enter your choice:\t\n """)
 
         if home_choice == "1":
             game_rules()
@@ -79,7 +79,7 @@ def game_rules():
             1. Play the Game
             2. Login
             3. Back to home page\n
-            Please enter your choice:\t """)
+            Please enter your choice:\t \n""")
 
         if gr_choice == "1":
             game()
@@ -147,7 +147,7 @@ def game():
 
     print("------------------  Play Again  ----------------------")
     print(" ")
-    play_again = input("(Yes / No): ").lower()
+    play_again = input("(Yes / No): \n").lower()
     print(" ")
     if play_again == "yes":
         game()
@@ -197,9 +197,9 @@ def register():
     print(" ")
     print("------------------- Your Details ----------------------")
     print(" ")
-    username = input("Create a username: \t")
-    password = input("Enter your password: \t")
-    email = input("Enter your email address: \t")
+    username = input("Create a username: \t\n")
+    password = input("Enter your password: \t\n")
+    email = input("Enter your email address: \t\n")
     user_details = [username, password, email]
     login.append_row(user_details)
     update_login_worksheet()
@@ -259,8 +259,8 @@ def existing_players():
     print(" ")
     print(" Lets get you signed in ....")
     print(" ")
-    username = input("Username: \t")
-    password = input("Password: \t")
+    username = input("Username: \t\n")
+    password = input("Password: \t\n")
     if username != login.findall("Username"):
         print(" ")
         print("\n                Player found\n")
