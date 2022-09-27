@@ -186,6 +186,8 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Main Menu| on the home page once you scrol down you see the main menu | CLear and easy access | Works as expected|  
+<details><summary>Story 1 </summary>
+    <img src="docs/storys-testing/story1.png"></details>
 
 2. I want to be able to read the game's rules.
 
