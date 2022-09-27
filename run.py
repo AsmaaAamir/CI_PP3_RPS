@@ -1,7 +1,9 @@
+"""
+Import random library for computer to genrate a random move
+"""
 import random
 import gspread
 from google.oauth2.service_account import Credentials
-
 
 # scope and the constant vars are from love_sandwiches walkt-through project
 # by code institute
@@ -55,9 +57,9 @@ def home_screen():
 
 def game_rules():
     """
-    Game rules - breifly explainging the user how to play the game.
-    how to win the game and how the user can lose the game.
-    I got the game rules from google.
+    Game rules - Briefly describing how to play the game to the user.
+    how the user can lose the game and how to win it.
+    The game's rules were found on Google.
     """
     print("------------------  Game Rules  -----------------------")
     print(" ")
@@ -184,11 +186,11 @@ def login_menu():
 
 def register():
     """
-    Allows user to enter their details for registeration.
-    Raises any errors in Username and passwords if they meet the rules,
-    stated in the register varibale.
-    Raises any errors in Username and passwords if they meet the rules,
-    stated in the register varibale.
+    Allows users to register by entering their information.
+    identifies any username and password mistakes that fall inside the
+    parameters specified in the register variable.
+    identifies any username and password mistakes that fall inside the
+    parameters specified in the register variable.
     """
     print(" ")
     print("-------------------  Sign Up  -----------------------")
@@ -254,10 +256,10 @@ def update_login_worksheet():
 
 def existing_players():
     """
-    Allowing returing player to login to play the game.
-    Player will need to use there username and password to login.
-    The usernae is retrieved from the first column in login sheet.
-    The password is retrieved from the second column from login details.
+    Enabling re-login for players to play the game.
+    To log in, the player will need to enter their username and password.
+    The first column of the login sheet is where the user name is located.
+    From the login information's second column, the password is obtained.
     """
     print(" ")
     print("----------------- Welcome Back ------------------------ ")

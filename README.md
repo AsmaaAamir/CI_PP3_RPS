@@ -174,6 +174,11 @@ The application's structure and logic are summarised in th diagram below.
 
 ## Validation
 
+The run.py module's Python code was built and verified in Git Pod. The result for all modules was a pass with no errors and no warnings.
+<details><summary>run.py</summary>
+<img src="docs/run.py.validation.png"></details>
+
+
 ## Testing 
 
 ## Bugs
