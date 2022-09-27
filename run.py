@@ -272,20 +272,27 @@ def existing_players():
     print(" ")
     print(" Lets get you signed in ....")
     print(" ")
-    udetails = SHEET
     username = input("Username: \t")
     password = input("Password: \t")
-    if not [x for x in udetails if x["username"] == username]:
-        print("No player found\n")
-        print("Please check details and try again\n")
-        existing_players()
-    else:     
-        m_username = [x for x in udetails if x["username"] == username][0]
-    if password == m_username["password"]:
-        print("Login successful")
+    if username != login.findall("Username"):
+        print(" ")
+        print("\n                Player found\n")
+        print("                  Lets Play")
+        print("\n-----------------------------------------------------\n")
         game()
+    elif username == login.findall("Username"):
+        print(" ")
+        print("\n         No player found\n")
+        print("    Please check details and try again\n")
     else:
-        print("Unable to localate the player, please try again")
+        existing_players()
+    if password != login.findall("Password"):
+        game()
+    elif password == login.findall("Password"):
+        print(" ")
+        print("\n         No player found\n")
+        print("    Please check details and try again\n")
+    else:
         existing_players()
     
 
