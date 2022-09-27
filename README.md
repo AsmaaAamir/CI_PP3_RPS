@@ -181,7 +181,8 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
 
 ## Testing 
 
-1. I want there to be distinct options on the main menu
+1. I want there to be distinct options on the main menu :- 
+
 | Feature  | Action  | Expected Result  | Result |
 |----------|---------|------------------|--------|
 | Main Menu| on the home page once you scrol down you see the main menu | CLear and easy access | Works as expected|  
