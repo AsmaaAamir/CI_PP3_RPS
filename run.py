@@ -71,9 +71,10 @@ def game_rules():
     print(" ")
     print("Ways your can  *** WIN *** ")
     print(" ")
-    print("1.You choose Rock, you will win against Scissor\n   but lose against Paper.")
-    print("2.You choose Paper, you will win against Rock\n  but lose against Sissor.")
-    print("3.You choose Sicssor, you will win against Paper\n   but lose against Rock.")
+    print("If you choose:")
+    print(" * Rock, you will win against Scissor\n   but lose against Paper.")
+    print(" * Paper, you will win against Rock\n  but lose against Sissor.")
+    print(" * Sicssor, you will win against Paper\n   but lose against Rock.")
     print(" ")
     print("------------------------------------------------------")
     while True:
