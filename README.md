@@ -119,6 +119,7 @@ The application's structure and logic are summarised in th diagram below.
 * Language
     - The logic of the programme was created using the Python programming language. 
 * Frameworks & Tools 
+    - Git Pod
     - GitHub
     - Google Cloud Platform
     - Google Sheets 
@@ -129,16 +130,22 @@ The application's structure and logic are summarised in th diagram below.
         - Random: Used in Rock Paper & Scissors game to the user can play againt the computer. 
     * Third Party Libraries:
         - gspread: 
-        - google.oauth2.service_account:
         
 ## Features
 1. Main Menu
-    * 
+    * The main meny welcome you to the page with Rock, Paper and Sissors going diaginally. Then sub-heading "Main Menu' with 3 option:
+        1. Game rules
+        2. Login 
+        3. Exist 
+    
+    Then it give you the option to put in your choose.
+    <details><summary>Main Menu </summary>
+    <img src = "docs/featuers/main-menu.png"></details>
 2. Game Rules 
 3. Log-in 
 4. Register 
-6. Game and Play again option 
-7. Quit game option
+5. Game and Play again  
+6. Quit game 
 
 ## Validation
 
