@@ -133,16 +133,21 @@ The application's structure and logic are summarised in th diagram below.
         
 ## Features
 1. Main Menu
-    * The main meny welcome you to the page with Rock, Paper and Sissors going diaginally. Then sub-heading "Main Menu' with 3 option:
-        1. Game rules
-        2. Login 
-        3. Exist 
-    
-    Then it give you the option to put in your choose.
-    <details><summary>Main Menu </summary>
-    <img src = "docs/featuers/main-menu.png"></details>
+The main meny welcome you to the page with Rock, Paper and Sissors going diaginally. Then sub-heading "Main Menu' with 3 option:
+* Game rules
+* Login 
+* Exist 
+<details><summary>Main Menu </summary>
+<img src = "docs/featuers/main-menu.png"></details>
+
 2. Game Rules 
+The Game rules option cover the rule on how to play the game, who you will be playing the game with. Also how you can win the game. 
+<details><summary>Game Rules </summary>
+<img src = "docs/featuers/gam-rules.png"></details>
+
 3. Log-in 
+
+
 4. Register 
 5. Game and Play again  
 6. Quit game 

@@ -280,8 +280,7 @@ def existing_players():
     if password != login.findall("Password"):
         game()
     elif password == login.findall("Password"):
-        print(" ")
-        print("\n         No player found\n")
+        print("\n        No player found\n")
         print("    Please check details and try again\n")
     else:
         existing_players()
