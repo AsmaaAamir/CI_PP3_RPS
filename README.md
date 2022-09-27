@@ -137,9 +137,8 @@ The application's structure and logic are summarised in th diagram below.
 2. Game Rules 
 3. Log-in 
 4. Register 
-6. Game 
-7. Play again option 
-8. Quit game option
+6. Game and Play again option 
+7. Quit game option
 
 ## Validation
 

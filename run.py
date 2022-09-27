@@ -46,7 +46,7 @@ def home_screen():
         elif home_choice == "2":
             login_menu()
         elif home_choice == "3":
-            exit()
+            exit_game()
         else:
             print("You can only select either 1 to 3")
             print("Please enter your choice: \t")
