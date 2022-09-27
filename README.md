@@ -149,18 +149,43 @@ The application's structure and logic are summarised in th diagram below.
 
 ## Deployment
 ### Heroku 
+
 I used Heroky to deploye this application through GitGub. below are the step I took to deploye the appliction:
-    1. Create an account on herkou.com or sign in. 
-    2. Creat a new app, add your project name and choose your region. 
-    3. Click on create app
-    4. Go to Setting 
-    5. 
+
+1. Create an account on herkou.com or sign in. 
+2. Creat a new app, add your project name and choose your region then click creat app.  
+3. Go to Setting and go to Config Vars - there you can put any files that is sensitive e.g (CREDS.json)
+4. Then we need to add buildpacks, so click on Add build pack and choose python first and the nodejs. They have to in that order
+5. Go to Deploy and at the Deplument method, click on Connect with Github. 
+6. Then it will ask you to enter your repository name and once you find it click on it. 
+7. Once connect it will ask you to choose the branch you want yo build you app from.
+8. To make thing easy for you click Enable auTOMATIC deploys, this will keep the app up to date with your Github repository. 
+
+### Forking the GitHub Repository
+
+You can create a copy of the original repository to see or edit with out changing the original by forking on GitHub. You can do this by following these steps:
+
+1. Log in to your GitHub account and search for the repository.
+2. Click on Fork (its the last button on the top right of the repository page.)
+3. Thus copy the repository in to your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to your GitHub account and find the repositroy taht your would like to clone
+2. Then locate the Code button (It's the 3rd button on the right befor the GitPod button).
+3. You will need to copy the HTTPS link and then open Git Bash. 
+4. You would need to change the curent working directory to where you want the cloned directory to be made.
+5. Then in the IDE'S terminal type 'git clone' then paste the URL link that you copied from HTTPS.
+6. After pressing enter, that would have created your local clone.  
+
 
 
 ## Credits 
+
 * Code Institute - for Git template ide and "Love Sandwiches - Essentials Project" which helped me with connecting the Google Spreadsheet to my project.
 
 ## Acknowledgements 
+
 I would like to take this opportunit to thank you :
 * My mentor Mo Shami for his feedback , advise and guidance
 * tutor Ger for helping me fix registeration issue
