@@ -86,7 +86,7 @@ once registration is complete, the user is greeted with a notice that they have 
 
 ### Game and Plat again
 
-The user makes the first move by selecting rock, paper or sissors by tyoing it on the keybaord. Then computer makes its move and the game's outcome is displayed to the user. 
+The user makes the first move by selecting rock, paper or sissors by typing it on the keybaord. Then computer makes its move and the game's outcome is displayed to the user. 
 If the users enter anthying other then rock ,paper and sissord  in the consol, the application will keep presenting the same option. 
 When the user wins, lose or ties a notice stating that they can play agian will appear. If they select yes the game will restart. if not, it offers the user below optiom:
 - Play again 
@@ -133,23 +133,36 @@ The application's structure and logic are summarised in th diagram below.
         
 ## Features
 1. Main Menu
-The main meny welcome you to the page with Rock, Paper and Sissors going diaginally. Then sub-heading "Main Menu' with 3 option:
+The page's primary message welcomes you and displays the game of Rock, Paper, and Scissors diagonally. Subheading "Main Menu" with three choices follows:
 * Game rules
 * Login 
 * Exist 
 <details><summary>Main Menu </summary>
-<img src = "docs/featuers/main-menu.png"></details>
+<img src="docs/featuers/main-menu.png"></details>
 
 2. Game Rules 
 The Game rules option cover the rule on how to play the game, who you will be playing the game with. Also how you can win the game. 
 <details><summary>Game Rules </summary>
-<img src = "docs/featuers/gam-rules.png"></details>
+<img src="docs/featuers/gam-rules.png"></details>
 
 3. Log-in 
-
+The application asks you if you've played before when you select the login option. There are 3 choices.
+* Yes - Takes you to your login page, welcomes you with a message, and then requests your username and password. You can play the game if your registration information is accurate.
+* No - Takes you to registration page.
+* Home Page - Take you back to home page. 
+<details><summary>Log In </summary>
+<img src="docs/featuers/log-in.png"></details>
 
 4. Register 
+ When you go to the registration page, you can see the registration regulations and the sign up subheading. You will then be prompted by the application to enter your username, password, and email address. If everything is OK, you will be greeted with a notice that says "storing your details" and "your registered."
+<details><summary>Registration </summary>
+<img src="docs/featuers/registration.png"></details>
+
 5. Game and Play again  
+Following registration or logging in, we can play the game. The subheading "Let's start" is the first thing you see, followed by your three options: "rock," "paper," or "scissors." When you write what you want, the machine makes a choice, and you immediately receive the outcome. letting you know if there was a tie, a win, or a loss. You then have the option to play again.
+<details><summary>Game & Play again </summary>
+<img src="docs/featuers/game.png"></details>
+
 6. Quit game 
 
 ## Validation
