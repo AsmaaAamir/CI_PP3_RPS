@@ -245,6 +245,8 @@ The run.py module's Python code was built and verified in Git Pod. The result fo
     <img src="docs/storys-testing/story8.png"></details>
 
 ## Bugs
+Solved Bugs:
+* When new user register enter detail they werent being saved in google sheet. Then I had to write different way 'user_details = [username, password, email' and then append the file. 
 
 ## Deployment
 ### Heroku 
